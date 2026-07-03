@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #83caed;
+    color: #262626;
+    margin: 0;
+}
+
+header {
+    background-color: #065A82;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+main {
+    padding: 16px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #065A82;
+}
+
+footer {
+    background-color: #065A82;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    color: #dddddd; 
+}
+
+table, th, td {
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th {
+    background-color: #83cdef;
+    font-weight: bold;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: #21B0A7;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    main{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px;
+    }
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nama-status-wrapper {
+        justify-content: flex-start; /* Di desktop, posisi grup text rata kiri */
+    }
+}
+
+#btnToggle {
+    padding: 8px 16px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+body.dark {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+body.dark header{
+    background-color: #0f3460;
+}
+
+body.dark section {
+    background-color: #16213e;
+    border-color: #444;
+}
+
+body.dark .skill-item {
+    background-color: #e94560;
+}
+
+body.dark h2 {
+    color: #e0e0e0 !important;
+}
+
+body.dark footer {
+    background-color: #0f3460;
+}
+
+.nama-status-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;     
+    align-items: baseline;
+    gap: 10px 5px;
+    justify-content: center;
+}
+
+.nama-status-wrapper h1 {
+    margin: 0;
+}
+
+.nama-status-wrapper .tagline {
+    margin: 0;
+}
